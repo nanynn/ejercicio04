@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 04</title>
+	<script src="https://use.fontawesome.com/b98428e78e.js"></script>
+</head>
+<body>
+	<audio  id="musica" src="assets/audio/losFinelis.mp3" preload="auto"></audio>
+	<div>
+
+	  <button onclick="document.getElementById('musica').play()"><i class="fa fa-play" aria-hidden="true"></i></button>	
+	  <button onclick="document.getElementById('musica').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').backward()"><i class="fa fa-backward" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').forward()"><i class="fa fa-forward" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').volume+=0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').volume-=0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button>
+	</div>
+
+
+	<script src="assets/js/javascript.js"></script>
+</body>
+</html>
