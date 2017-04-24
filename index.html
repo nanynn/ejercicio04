@@ -6,9 +6,14 @@
 	<script src="https://use.fontawesome.com/b98428e78e.js"></script>
 </head>
 <body>
-	<audio  id="musica" src="assets/audio/losFinelis.mp3" preload="auto"></audio>
-	<div>
+	<h1>Reproductor de música</h1>
 
+	<audio  id="musica" src="assets/audio/losFinelis.mp3" preload="auto"></audio>
+	<div> 
+		<progress value="20" max="100"></progress>
+	</div>
+
+	<div>
 	  <button onclick="document.getElementById('musica').play()"><i class="fa fa-play" aria-hidden="true"></i></button>	
 	  <button onclick="document.getElementById('musica').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
 	  <button onclick="document.getElementById('musica').backward()"><i class="fa fa-backward" aria-hidden="true"></i></button>
