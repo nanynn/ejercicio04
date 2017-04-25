@@ -8,16 +8,13 @@
 <body>
 	<h1>Reproductor de música</h1>
 
-	<audio  id="musica" src="assets/audio/losFinelis.mp3" preload="auto"></audio>
-	<div> 
-		<progress value="20" max="100"></progress>
-	</div>
+	<audio  id="musica" src="assets/audio/losFinelis.mp3" preload="auto" controls=""></audio>
 
 	<div>
 	  <button onclick="document.getElementById('musica').play()"><i class="fa fa-play" aria-hidden="true"></i></button>	
 	  <button onclick="document.getElementById('musica').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button>
-	  <button onclick="document.getElementById('musica').backward()"><i class="fa fa-backward" aria-hidden="true"></i></button>
-	  <button onclick="document.getElementById('musica').forward()"><i class="fa fa-forward" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').currentTime-=5"><i class="fa fa-backward" aria-hidden="true"></i></button>
+	  <button onclick="document.getElementById('musica').currentTime+=20"><i class="fa fa-forward" aria-hidden="true"></i></button>
 	  <button onclick="document.getElementById('musica').volume+=0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
 	  <button onclick="document.getElementById('musica').volume-=0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button>
 	</div>
